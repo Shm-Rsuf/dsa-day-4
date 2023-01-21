@@ -3,7 +3,12 @@ const student = {
   age: 26,
 };
 
-// console.log(student);
+// console.log(student);cons
+student.subject = "CSE";
 
-console.log(student.name);
-console.log(student["age"]);
+const entries = Object.entries(student);
+console.log(entries);
+
+for (const [key, value] of entries) {
+  console.log(key, value);
+}
